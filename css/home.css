@@ -11,7 +11,7 @@
   left: 0;
   height: 100dvh;
   width: 100vw;
-  background: url("../assets/img/fundo.jpg") center no-repeat;
+  background: url("../../assets/img/fundo.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@
   float: right;
   height: 100dvh;
   width: 100vw;
-  shape-outside: url("../assets/img/sapo.png");
+  shape-outside: url("../../assets/img/sapo.png");
 }
 
 .containerHome {
@@ -77,7 +77,7 @@
   right: 0;
   height: 100dvh;
   width: 100vw;
-  background: url("../assets/img/sapo.png") center no-repeat;
+  background: url("../../assets/img/sapo.png") center no-repeat;
   background-size: cover;
   z-index: 3;
   pointer-events: none;
