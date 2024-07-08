@@ -1,0 +1,104 @@
+header{
+    height: 65px;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.3);
+    color: var(--texto-claro);
+    position: fixed;
+    top: 1;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    backdrop-filter: blur(10px);
+    & a{
+        color: var(--texto-claro);
+        text-decoration: none;
+        &:hover{
+            color: var(--verde-claro-hover);
+        }
+    }
+    & ul{
+        list-style: none;
+    }
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain ;
+}
+
+.logo > *{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links button{
+    background-color: var(--verde-claro);
+    color: var(--texto-claro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 200ms;
+    &:hover{
+        background-color: var(--verde-claro-hover);
+    }
+}
+
+.burguer{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 0 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .burguer{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .burguer div{
+        width: 25px;
+        height: 3px;
+        background-color: var(--texto-claro);
+        margin: 5px;
+        transition: 200ms;
+    }
+    .burguer div:hover{
+        background-color: var(--verde-claro);
+    }
+    .nav-links.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(26, 26, 26, 0.9);
+        padding: 20px;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,18 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p, span {
+    overflow-wrap: break-word;
+    max-width: 80ch;
+}
+
+:root{
+    --verde-claro: #228B22;
+    --texto-claro: #f5f5f5;
+
+    --verde-claro-hover: #1e7e1e;
+}
